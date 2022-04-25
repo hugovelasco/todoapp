@@ -1,36 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="assets/css/stylesheet.css">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+
   <title>Frontend Mentor | Todo app</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
+
 <body>
 
-  Todo
+  <header></header>
+  <main>
+    <section class="todo-container">
 
-  <!-- Add dynamic number --> items left
+      <div class="todo-title-switchBtn">
+        <h1>Todo</h1>
+        <img src="assets/images/icon-sun.svg">
+      </div>
 
-  All
-  Active 
-  Completed
+      <div class="todo-insert">
+        <input type="text" placeholder="Create a new todo...">
+      </div>
 
-  Clear Completed
 
-  Drag and drop to reorder list
+      <div class="todo-list">
 
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+        <div class="todo-list-info">
+
+          <!-- Add dynamic number --> <span>items left</span>
+
+          <div class="todo-list-options">
+            
+           <span>All</span>
+
+           <span>Active</span>
+
+           <span>Completed</span>
+            
+          </div>
+
+          <span>Clear Completed</span>
+        </div>
+
+      </div>
+      <p>Drag and drop to reorder list</p>
+    </section>
+  </main>
+
+  <footer>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io/challenges/todo-app-Su1_KokOW" target="_blank">Frontend
+        Mentor</a>.<br>
+      Coded by <a href="https://www.linkedin.com/in/hugovelasco/" target="_blank">Hugo Velasco</a>.
+    </div>
+  </footer>
 </body>
+<script src="assets/scripts/script.js"></script>
+
 </html>

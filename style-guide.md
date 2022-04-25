@@ -11,28 +11,28 @@ The designs were created to the following widths:
 
 ### Primary
 
-- Bright Blue: hsl(220, 98%, 61%)
-- Check Background: linear-gradient hsl(192, 100%, 67%) to hsl(280, 87%, 65%)
+- Bright Blue: rgb(58,123,253);
+- Check Background: linear-gradient rgb(87,221,255) to rgb(192,88,243);
 
 ### Neutral
 
 ### Light Theme
 
-- Very Light Gray: hsl(0, 0%, 98%)
-- Very Light Grayish Blue: hsl(236, 33%, 92%)
-- Light Grayish Blue: hsl(233, 11%, 84%)
-- Dark Grayish Blue: hsl(236, 9%, 61%)
-- Very Dark Grayish Blue: hsl(235, 19%, 35%)
+- Very Light Gray: rgb(250,250,250);
+- Very Light Grayish Blue: rgb(228,229,241);
+- Light Grayish Blue: rgb(210,211,219);
+- Dark Grayish Blue: rgb(147,148,165);
+- Very Dark Grayish Blue: rgb(72,75,106);
 
 ### Dark Theme
 
-- Very Dark Blue: hsl(235, 21%, 11%)
-- Very Dark Desaturated Blue: hsl(235, 24%, 19%)
-- Light Grayish Blue: hsl(234, 39%, 85%)
-- Light Grayish Blue (hover): hsl(236, 33%, 92%)
-- Dark Grayish Blue: hsl(234, 11%, 52%)
-- Very Dark Grayish Blue: hsl(233, 14%, 35%)
-- Very Dark Grayish Blue: hsl(237, 14%, 26%)
+- Very Dark Blue: rgb(22,23,34);
+- Very Dark Desaturated Blue: rgb(37,39,60);
+- Light Grayish Blue: rgb(202,205,232);
+- Light Grayish Blue (hover): rgb(228,229,241);
+- Dark Grayish Blue: rgb(119,122,146);
+- Very Dark Grayish Blue: rgb(77,80,102);
+- Very Dark Grayish Blue: rgb(57,58,76);
 
 ## Typography
 
