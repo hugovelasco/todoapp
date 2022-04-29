@@ -3,7 +3,7 @@
     /* Primary */
 
     --brightBlue: rgb(58, 123, 253);
-    --checkBackground: linear-gradient(rgb(87, 221, 255), rgb(192, 88, 243));
+    --checkBackground: linear-gradient(90deg, rgb(87, 221, 255), rgb(192, 88, 243));
 
     /* Background image */
 
@@ -46,12 +46,15 @@ body {
     background-color: var(--veryDarkBlue_DarkTheme);
     display: flex;
     flex-direction: column;
-    min-height: 100%;
-    /* box-sizing: border-box; */
+    height: 100%;
+    box-sizing: border-box;
 }
 
-header {
+.top-img {
     background-image: var(--backgroundImage);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     width: 100%;
     height: 40vh;
 }
@@ -60,6 +63,13 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.flex-row {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
 }
 
 .todo-container {
@@ -75,19 +85,14 @@ main {
     outline: 0;
 }
 
-.todo-container input {
-    color: var(--lightGrayishBlue_DarkTheme);
-
-}
-
 .todo-title-switchBtn {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    color: var(--lightGrayishBlue_hover_DarkTheme);
 }
 
 .todo-title-switchBtn h1 {
-    color: white;
     text-transform: uppercase;
     letter-spacing: 1rem;
     display: inline-block;
@@ -101,17 +106,78 @@ main {
     width: 100%;
     margin-top: 10px;
     margin-bottom: 10px;
-    text-align: center;
 }
 
 .todo-container input,
-.todo-list-info {
+.todo-list-info,
+.todo-list p,
+.todo-check-container {
     background-color: var(--veryDarkDesaturatedBlue_DarkTheme);
     border-radius: 5px;
-    padding-top: 13px;
-    padding-bottom: 13px;
-    width: 100%;
+    padding: 13px;
+    width: calc(100% - 26px);
+    font-size: 13px;
+    color: var(--lightGrayishBlue_DarkTheme);
 }
+
+.todo-check-container {
+    color: var(--lightGrayishBlue_hover_DarkTheme);
+    border-bottom: 1px solid var(--veryDarkGrayishBlue_DarkTheme);
+}
+
+.todo-check-container ul li {
+    list-style: none;
+    color: var(--lightGrayishBlue_hover_DarkTheme);
+    border-bottom: 1px solid var(--veryDarkGrayishBlue_DarkTheme);
+    padding-bottom: 10px;
+    padding-top: 10px;
+    position: relative;
+}
+
+.done-task {
+    text-decoration: line-through;
+    color: var(--veryDarkGrayishBlue_DarkTheme);
+}
+
+.check-btn {
+    display: block;
+    width: 30px;
+    height: 30px;
+    /* border-radius: 50%; */
+    border: 1px solid;
+    border-color: var(--veryDarkerGrayishBlue_DarkTheme);
+    cursor: pointer;
+    margin-right: 10px;
+    background-color: transparent;
+}
+
+.check-icon::before {
+    content: "\2714";
+    font-size: 20px;
+    color: var(--lightGrayishBlue_hover_DarkTheme);
+}
+
+.check-btn:focus {
+    content: "\2714";
+}
+
+.check-btn:hover{
+    border-image: var(--checkBackground) 1;
+}
+
+.cross-mark-btn::before {
+    content: "\274C";
+}
+
+.cross-mark-btn{
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    right: 0;
+}
+
+/* .check-btn:focus */
 
 .todo-list-info {
     display: flex;
@@ -120,7 +186,7 @@ main {
     align-self: center;
     color: var(--veryDarkerGrayishBlue_DarkTheme);
     border: solid 1px;
-    font-size: 13px;
+
 }
 
 .todo-list {
@@ -134,7 +200,7 @@ main {
 }
 
 .todo-list-info span:hover {
-    color: var(--brightBlue);
+    color: var(--lightGrayishBlue_hover_DarkTheme);
 }
 
 .todo-list~p {
@@ -157,3 +223,4 @@ footer {
     color: rgb(62, 82, 163);
     text-decoration: none;
 }
+

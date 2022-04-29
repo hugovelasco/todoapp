@@ -19,34 +19,45 @@
 
 <body>
 
-  <header></header>
+  <div class="top-img"></div>
   <main>
     <section class="todo-container">
 
-      <div class="todo-title-switchBtn">
+      <header class="todo-title-switchBtn">
         <h1>Todo</h1>
         <img src="assets/images/icon-sun.svg">
-      </div>
+      </header>
 
       <div class="todo-insert">
-        <input type="text" placeholder="Create a new todo...">
+        <input type="text" placeholder="Create a new todo..." id="insert-todo">
       </div>
 
 
       <div class="todo-list">
+
+        <div class="todo-check-container">
+
+          <ul id="all-items-list">
+
+            <!-- <li class="flex-row"><button type="button" class="check-btn"></button><span>Item 01</span><button type="button" class="cross-mark-btn"></button></li>
+            <li class="flex-row"><button type="button" class="check-btn"></button><span>Item 02</span><button type="button" class="cross-mark-btn"></button></li> -->
+
+          </ul>
+          
+        </div>
 
         <div class="todo-list-info">
 
           <!-- Add dynamic number --> <span>items left</span>
 
           <div class="todo-list-options">
-            
-           <span>All</span>
 
-           <span>Active</span>
+            <span>All</span>
 
-           <span>Completed</span>
-            
+            <span>Active</span>
+
+            <span>Completed</span>
+
           </div>
 
           <span>Clear Completed</span>
@@ -64,7 +75,7 @@
       Coded by <a href="https://www.linkedin.com/in/hugovelasco/" target="_blank">Hugo Velasco</a>.
     </div>
   </footer>
+  <script src="assets/scripts/script.js"></script>
 </body>
-<script src="assets/scripts/script.js"></script>
 
 </html>
