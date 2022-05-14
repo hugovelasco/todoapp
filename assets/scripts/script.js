@@ -6,7 +6,7 @@ full_list.forEach((item_list) => {
 
     item_list.addEventListener('click', () => {
         if (!clicked) {
-            console.log(item_list.children.namedItem);
+            // console.log(item_list.children.namedItem);
             // item_list.querySelector('.check-btn ~ span').classList.add('.done-task');
 
             item_list.classList.add('check-icon');
